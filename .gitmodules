@@ -1,0 +1,3 @@
+[submodule "themes/catppuccin/bat"]
+	path = themes/catppuccin/bat
+	url = https://github.com/catppuccin/bat
