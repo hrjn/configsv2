@@ -11,6 +11,7 @@ brew "bat"
 brew "starship"
 brew "gh"
 brew "just"
+brew "fd"
 
 ## Python
 brew "pyenv"
