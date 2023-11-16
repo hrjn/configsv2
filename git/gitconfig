@@ -1,0 +1,31 @@
+[user]
+    name = Harizo Rajaona
+    email = harizo.rajaona@gmail.com
+
+[github]
+    user = hrjn
+
+[core]
+    editor = vi
+
+[alias]
+    # commit
+    c = commit
+    # status
+    st = status
+    sst = status -sb
+    # log
+    slog = log --oneline
+    blog = log --date=format:'%a %b %e, %Y' --pretty=format:'%C(yellow)%h%C(reset) %s %C(cyan)%cd%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph
+    # branch
+    b = branch
+    bb = branch -vv
+    # stash
+    x = stash
+    xl = stash list
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

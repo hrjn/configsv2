@@ -13,6 +13,7 @@ brew "gh"
 brew "just"
 brew "fd"
 brew "git-lfs"
+brew "ncdu"
 
 ## Python
 brew "pyenv"
