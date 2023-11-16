@@ -12,9 +12,13 @@ brew "starship"
 brew "gh"
 brew "just"
 brew "fd"
+brew "git-lfs"
 
 ## Python
 brew "pyenv"
+
+## Web dev
+brew "deno"
 
 ## Fonts
 cask "font-monaspace"
