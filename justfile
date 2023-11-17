@@ -1,6 +1,7 @@
 brew_version := `(brew --version | cut -f2 -d ' ')`
 bat_theme_dir := `(bat --config-dir)` + "/themes"
 git_config := "$HOME/.gitconfig"
+zsh_config := "$HOME/.zshrc"
 
 info:
   @echo "Homebrew" {{brew_version}}
@@ -16,9 +17,11 @@ bat:
 
 git:
   test -e {{git_config}} || ln -s $(pwd)/git/gitconfig {{git_config}}
-  
+
 zsh:
-  @ln -s $(pwd)/zsh/zshrc $HOME/.zshrc
+  test -e {{zsh_config}} || ln -s $(pwd)/zsh/zshrc {{zsh_config}}
 
 fzf:
-  @$(brew --prefix)/opt/fzf/install
+  test -e $HOME/.fzf.zsh || $(brew --prefix)/opt/fzf/install
+
+build: bat git zsh fzf
