@@ -5,21 +5,35 @@ tap "homebrew/cask-fonts"
 
 
 ## CLI/terminal tools
-brew "exa"
-brew "jq"
-brew "bat"
+## -- Navigation
 brew "starship"
-brew "gh"
-brew "just"
+brew "exa"
 brew "fd"
-brew "git-lfs"
+brew "fzf"
+brew "ripgrep"
+
+## -- Monitoring
+brew "htop"
 brew "ncdu"
+brew "dust"
+brew "duf"
+brew "bottom"
+
+## -- Data wrangling
+brew "bat"
+brew "jq"
+brew "duckdb"
+brew "hexyl"
 
 ## Python
 brew "pyenv"
 
 ## Web dev
 brew "deno"
+
+brew "gh"
+brew "just"
+brew "git-lfs"
 
 ## Fonts
 cask "font-monaspace"
