@@ -1,0 +1,9 @@
+matches:
+  - trigger: "::e/mz"
+    replace: "🙈"
+  - trigger: "::e/kz"
+    replace: "🙉"
+  - trigger: "::e/iz"
+    replace: "🙊"
+  - trigger: "::e/av"
+    replace: "🥑"

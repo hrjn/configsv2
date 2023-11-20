@@ -2,6 +2,7 @@ brew_version := `(brew --version | cut -f2 -d ' ')`
 bat_theme_dir := `(bat --config-dir)` + "/themes"
 git_config := "$HOME/.gitconfig"
 zsh_config := "$HOME/.zshrc"
+espanso_config_dir := `(espanso path | head -n 1 | grep -o '/Users.*')`
 
 info:
   @echo "Homebrew" {{brew_version}}
@@ -24,4 +25,10 @@ zsh:
 fzf:
   test -e $HOME/.fzf.zsh || $(brew --prefix)/opt/fzf/install
 
-build: bat git zsh fzf
+espanso:
+  rm -f "{{espanso_config_dir}}/config/default.yml"
+  rm -rf "{{espanso_config_dir}}/match/"
+  test -e "{{espanso_config_dir}}/config/default.yml" || ln -s "$(pwd)/espanso/config/default.yml" "{{espanso_config_dir}}/config/default.yml"
+  test -d "{{espanso_config_dir}}/match" || ln -s "$(pwd)/espanso/match" "{{espanso_config_dir}}/match"
+
+build: bat git zsh fzf espanso
