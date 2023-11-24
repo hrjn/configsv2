@@ -3,6 +3,7 @@ bat_theme_dir := `(bat --config-dir)` + "/themes"
 git_config := "$HOME/.gitconfig"
 zsh_config := "$HOME/.zshrc"
 espanso_config_dir := `(espanso path | head -n 1 | grep -o '/Users.*')`
+starship_config := "$HOME/.config/starship.toml"
 
 info:
   @echo "Homebrew" {{brew_version}}
@@ -30,5 +31,8 @@ espanso:
   rm -rf "{{espanso_config_dir}}/match/"
   test -e "{{espanso_config_dir}}/config/default.yml" || ln -s "$(pwd)/espanso/config/default.yml" "{{espanso_config_dir}}/config/default.yml"
   test -d "{{espanso_config_dir}}/match" || ln -s "$(pwd)/espanso/match" "{{espanso_config_dir}}/match"
+
+starship:
+  test -e {{starship_config}} || ln -s $(pwd)/starship/starship.toml {{starship_config}}
 
 build: bat git zsh fzf espanso

@@ -1,0 +1,24 @@
+right_format = "$time"
+
+[python]
+
+
+[sudo]
+disabled = false
+style = "bold green"
+symbol = ""
+
+[status]
+disabled = false
+symbol = "❌ "
+not_executable_symbol = "🚫 "
+sigint_symbol = "🛑 "
+not_found_symbol = "🔍 "
+signal_symbol = "⚡"
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+
+
+[time]
+disabled = false
+format = "🕙 [$time]($style) "
