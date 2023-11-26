@@ -4,6 +4,7 @@ git_config := "$HOME/.gitconfig"
 zsh_config := "$HOME/.zshrc"
 espanso_config_dir := `(espanso path | head -n 1 | grep -o '/Users.*')`
 starship_config := "$HOME/.config/starship.toml"
+tmux_config := "$HOME/.tmux.conf"
 
 info:
   @echo "Homebrew" {{brew_version}}
@@ -34,5 +35,8 @@ espanso:
 
 starship:
   test -e {{starship_config}} || ln -s $(pwd)/starship/starship.toml {{starship_config}}
+
+tmux:
+  test -e {{tmux_config}} || ln -s $(pwd)/tmux/tmux.conf {{tmux_config}}
 
 build: bat git zsh fzf espanso
