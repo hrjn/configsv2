@@ -5,12 +5,14 @@ zsh_config := "$HOME/.zshrc"
 espanso_config_dir := `(espanso path | head -n 1 | grep -o '/Users.*')`
 starship_config := "$HOME/.config/starship.toml"
 tmux_config := "$HOME/.tmux.conf"
+nvim_config_dir := "$HOME/.config/nvim"
 
 info:
   @echo "Homebrew" {{brew_version}}
 
 brew:
-  brew bundle
+  brew bundle cleanup
+  brew bundle install
 
 bat:
   test -d {{bat_theme_dir}} ||  git clone https://github.com/catppuccin/bat {{bat_theme_dir}}
@@ -38,5 +40,8 @@ starship:
 
 tmux:
   test -e {{tmux_config}} || ln -s $(pwd)/tmux/tmux.conf {{tmux_config}}
+
+nvim:
+  test -d {{nvim_config_dir}} || ln -s $(pwd)/nvim {{nvim_config_dir}}
 
 build: bat git zsh fzf espanso

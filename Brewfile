@@ -14,6 +14,7 @@ brew "fzf"
 brew "ripgrep"
 brew "tmux"
 brew "coreutils"
+brew "neovim"
 
 
 ## -- Monitoring
@@ -37,6 +38,9 @@ brew "sqlite3"
 brew "xz"
 brew "zlib"
 brew "tcl-tk"
+
+## Lua
+brew "lua"
 
 ## Web dev
 brew "deno"
