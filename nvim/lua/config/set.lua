@@ -16,8 +16,8 @@ vim.opt.wrap = false
 -- Backups and undotree
 vim.opt.swapfile = false -- Disable swapfile 
 vim.opt.backup = false -- Disable backup file
-vim.opt.undofile = true -- Enable undodir file
-vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir" 
+vim.opt.undofile = true -- Enable undodir files
+vim.opt.undodir = os.getenv("HOME") .. "/.nvimi/undodir" 
 
 -- Search
 vim.opt.hlsearch = false -- Turn off search result hightlighting

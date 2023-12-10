@@ -1,6 +1,7 @@
 right_format = "$time"
 
-[python]
+[aws]
+disabled = true
 
 
 [sudo]

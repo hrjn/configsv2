@@ -3,6 +3,9 @@ tap "homebrew/cask-fonts"
 
 # Formulae
 
+## Apps
+brew "transmission"
+
 
 ## CLI/terminal tools
 ## -- Navigation
