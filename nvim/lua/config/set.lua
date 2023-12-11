@@ -26,3 +26,6 @@ vim.opt.incsearch = true -- Highlight current matches as you type the pattern
 -- Scrolling
 vim.opt.scrolloff = 8 -- How many lines are visible above and below cursor
 vim.opt.signcolumn = "yes" -- Always enable sign column display
+
+-- Colorscheme
+vim.cmd.colorscheme "catppuccin-mocha"
