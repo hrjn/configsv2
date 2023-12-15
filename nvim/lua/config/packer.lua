@@ -10,6 +10,11 @@ return require('packer').startup(function(use)
     -- catppuccin (color theme)
     use { "catppuccin/nvim", as = "catppuccin" }
 
+    -- nvim-tree
+    use {
+        "nvim-tree/nvim-tree.lua",
+        requires = { {"nvim-tree/nvim-web-devicons"} }
+    }
 
 end)
 
