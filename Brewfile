@@ -18,6 +18,7 @@ brew "ripgrep"
 brew "tmux"
 brew "coreutils"
 brew "neovim"
+brew "make"
 
 
 ## -- Monitoring

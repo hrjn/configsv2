@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Close current buffer
-vim.keymap.set("n", "<leader>c", vim.cmd.close)
+vim.keymap.set("n", "<leader>c", vim.cmd.bdelete)
 
 -- Select all
 vim.keymap.set("n", "<leader>aa", "ggVG")
