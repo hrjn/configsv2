@@ -8,6 +8,10 @@ brew "transmission"
 
 
 ## CLI/terminal tools
+
+## -- Cloud
+brew "terraform"
+
 ## -- Navigation
 brew "wget"
 brew "starship"
