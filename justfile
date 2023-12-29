@@ -11,7 +11,7 @@ info:
   @echo "Homebrew" {{brew_version}}
 
 brew:
-  brew bundle cleanup
+  brew bundle --force cleanup
   brew bundle install
 
 bat:

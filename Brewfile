@@ -1,5 +1,6 @@
 # Casks
 tap "homebrew/cask-fonts"
+tap "hashicorp/tap"
 
 # Formulae
 
@@ -10,7 +11,7 @@ brew "transmission"
 ## CLI/terminal tools
 
 ## -- Cloud
-brew "terraform"
+brew "hashicorp/tap/terraform"
 
 ## -- Navigation
 brew "wget"
@@ -52,6 +53,7 @@ brew "lua"
 
 ## Web dev
 brew "deno"
+brew "grip"
 
 brew "gh"
 brew "just"

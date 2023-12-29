@@ -38,4 +38,30 @@ require("mason-lspconfig").setup({
 })
 
 -- Autocompletion
+local cmp = require("cmp")
+local cmp_action = require("lsp-zero").cmp_action()
+
+cmp.setup({
+    mapping = cmp.mapping.preset.insert({
+        -- Enter to confirm completion
+        ["<CR>"] = cmp.mapping.confirm({select = false}),
+        -- Move
+        ['<C-k>'] = cmp.mapping(function()
+            if cmp.visible() then
+                cmp.select_prev_item({behavior = 'insert'})
+            else
+                cmp.complete()
+            end
+        end),
+        ['<C-j>'] = cmp.mapping(function()
+            if cmp.visible() then
+                cmp.select_next_item({behavior = 'insert'})
+            else
+                cmp.complete()
+            end
+        end),
+
+    })
+})
+
 
