@@ -45,7 +45,7 @@ cmp.setup({
     mapping = cmp.mapping.preset.insert({
         -- Enter to confirm completion
         ["<CR>"] = cmp.mapping.confirm({select = false}),
-        -- Move
+        -- Move up with C-k
         ['<C-k>'] = cmp.mapping(function()
             if cmp.visible() then
                 cmp.select_prev_item({behavior = 'insert'})
@@ -53,6 +53,7 @@ cmp.setup({
                 cmp.complete()
             end
         end),
+        -- Move down with C-j
         ['<C-j>'] = cmp.mapping(function()
             if cmp.visible() then
                 cmp.select_next_item({behavior = 'insert'})
