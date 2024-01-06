@@ -24,6 +24,10 @@
     x = stash
     xl = stash list
 
+[diff]
+    colormoved = "default"
+    colormovedws = "allow-indentation-change"
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
