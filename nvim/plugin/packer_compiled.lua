@@ -148,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/harizo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-obsession.vim"] = {
+    loaded = true,
+    path = "/Users/harizo/.local/share/nvim/site/pack/packer/start/vim-obsession.vim",
+    url = "https://github.com/tpope/vim-obsession.vim"
   }
 }
 
