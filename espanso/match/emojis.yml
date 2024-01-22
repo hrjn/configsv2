@@ -1,4 +1,12 @@
 matches:
+  - trigger: "::e/seed"
+    replace: "🫘"
+  - trigger: "::e/bud"
+    replace: "🌱"
+  - trigger: "::e/leaf"
+    replace: "🌿"
+  - trigger: "::e/tree"
+    replace: "🌳"
   - trigger: "::e/mz"
     replace: "🙈"
   - trigger: "::e/kz"
