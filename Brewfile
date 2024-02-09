@@ -55,10 +55,10 @@ brew "lua"
 ## Web dev
 brew "deno"
 brew "grip"
-
 brew "gh"
 brew "just"
 brew "git-lfs"
+brew "hugo"
 
 ## Fonts
 cask "font-monaspace"
