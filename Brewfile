@@ -6,9 +6,13 @@ tap "hashicorp/tap"
 
 ## Apps
 brew "transmission"
+brew "ffmpeg"
+brew "pandoc"
 
 
 ## CLI/terminal tools
+
+brew "parallel"
 
 ## -- Cloud
 brew "hashicorp/tap/terraform"
