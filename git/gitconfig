@@ -36,4 +36,5 @@
 	process = git-lfs filter-process
     required = true
 
-
+[push]
+    followtags = true
