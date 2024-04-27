@@ -5,7 +5,7 @@ tap "hashicorp/tap"
 # Formulae
 
 ## Apps
-brew "transmission"
+brew "transmission-cli"
 brew "ffmpeg"
 brew "pandoc"
 
@@ -36,6 +36,7 @@ brew "ncdu"
 brew "dust"
 brew "duf"
 brew "bottom"
+brew "iperf3"
 
 ## -- Data wrangling
 brew "bat"
