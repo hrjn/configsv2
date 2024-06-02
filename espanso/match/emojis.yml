@@ -15,3 +15,7 @@ matches:
     replace: "🙊"
   - trigger: "::e/av"
     replace: "🥑"
+  - trigger: "::done"
+    replace: "✅"
+  - trigger: "::todo"
+    replace: "☑️"

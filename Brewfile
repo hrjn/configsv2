@@ -52,6 +52,7 @@ brew "sqlite3"
 brew "xz"
 brew "zlib"
 brew "tcl-tk"
+brew "uv"
 
 ## Lua
 brew "lua"
