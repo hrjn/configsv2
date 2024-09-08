@@ -9,10 +9,12 @@
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 ## exa
-alias ls=exa
-alias l="exa -lah"
-alias ll="exa -lh"
-alias la="exa -lAh"
+alias l="ls -lah"
+alias ll="ls -lh"
+alias la="ls -lAh"
+
+# neovim
+alias v="nvim"
 
 # cd/navigation
 alias -- -="cd -"

@@ -1,5 +1,4 @@
 # Casks
-tap "homebrew/cask-fonts"
 tap "hashicorp/tap"
 
 # Formulae
@@ -8,11 +7,8 @@ tap "hashicorp/tap"
 brew "transmission-cli"
 brew "ffmpeg"
 brew "pandoc"
+brew "zola"
 
-
-## CLI/terminal tools
-
-brew "parallel"
 
 ## -- Cloud
 brew "hashicorp/tap/terraform"
@@ -20,7 +16,6 @@ brew "hashicorp/tap/terraform"
 ## -- Navigation
 brew "wget"
 brew "starship"
-brew "exa"
 brew "fd"
 brew "fzf"
 brew "ripgrep"
@@ -43,6 +38,7 @@ brew "bat"
 brew "jq"
 brew "duckdb"
 brew "hexyl"
+brew "imagemagick"
 
 ## Python
 brew "pyenv"
@@ -70,4 +66,4 @@ brew "hugo"
 cask "font-monaspace"
 cask "font-fira-code-nerd-font"
 
-
+cask "zed"
