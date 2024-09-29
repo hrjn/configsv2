@@ -8,10 +8,10 @@
 ## Tailscale
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
-## exa
-alias l="ls -lah"
-alias ll="ls -lh"
-alias la="ls -lAh"
+## eza
+alias l="eza -l --octal-permissions"
+alias lt="eza -TL 2"
+alias lg="eza -l --icons --git --git-ignore"
 
 # neovim
 alias v="nvim"
@@ -22,7 +22,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
-
 
 #############
 # FUNCTIONS #

@@ -23,6 +23,7 @@ brew "tmux"
 brew "coreutils"
 brew "neovim"
 brew "make"
+brew "eza"
 
 
 ## -- Monitoring
@@ -67,3 +68,4 @@ cask "font-monaspace"
 cask "font-fira-code-nerd-font"
 
 cask "zed"
+cask "audacity"
