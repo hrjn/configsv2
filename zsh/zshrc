@@ -1,5 +1,8 @@
 # Uncomment for activating profiling
 # zmodload zsh/zprof
+#
+
+CONFIG_DIR="$HOME/dev/configsv2"
 
 ###########
 # ALIASES #
@@ -9,7 +12,7 @@
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 ## eza
-alias l="eza -l --octal-permissions"
+alias ll="eza -l --octal-permissions"
 alias lt="eza -TL 2"
 alias lg="eza -l --icons --git --git-ignore"
 
@@ -22,6 +25,15 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+
+# Shortcuts
+alias cfg="nvim $CONFIG_DIR"
+function jb () {
+    cd $CONFIG_DIR
+    just brew
+    cd -
+}
+
 
 #############
 # FUNCTIONS #
@@ -40,6 +52,9 @@ groot () {
 ############
 # PROGRAMS #
 ############
+
+# mactex
+export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
 
 # homebrew
 export PATH=$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH

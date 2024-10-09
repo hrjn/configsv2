@@ -66,6 +66,10 @@ brew "hugo"
 ## Fonts
 cask "font-monaspace"
 cask "font-fira-code-nerd-font"
+cask "font-iosevka"
 
 cask "zed"
 cask "audacity"
+
+brew "john-jumbo"
+
