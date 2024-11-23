@@ -72,4 +72,5 @@ cask "zed"
 cask "audacity"
 
 brew "john-jumbo"
-
+brew "yt-dlp"
+brew "cmake"

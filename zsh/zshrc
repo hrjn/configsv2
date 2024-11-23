@@ -12,6 +12,8 @@ CONFIG_DIR="$HOME/dev/configsv2"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 ## eza
+alias ls="eza"
+alias l="eza -lah"
 alias ll="eza -l --octal-permissions"
 alias lt="eza -TL 2"
 alias lg="eza -l --icons --git --git-ignore"
