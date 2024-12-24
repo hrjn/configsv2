@@ -9,29 +9,33 @@
     editor = nvim
 
 [alias]
-    # commit
+    # -> Laziness
     c = commit
-    # status
     st = status
-    sst = status -sb
-    # log
-
-    vlog = log --graph --pretty=format:'commit: %C(bold red)%h%Creset %C(red)[%H]%Creset %C(bold magenta)%d %Creset%ndate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nauthor: %C(bold blue)%an%Creset %C(blue)[%ae]%Creset%n%C(cyan)%s%n%Creset'
-
-    # branch
     b = branch
-    bb = branch -vv
-    # -- Pretty-print the branches recently modified
+
+    # -> Short-format output for `git status` + branch info
+    sst = status --short --branch
+    
+    # -> Pretty `git log`
+    vlog = log --graph --pretty=format:'Commit: %C(bold red)%h%Creset %C(red)[%H]%Creset %C(bold magenta)%d %Creset%nDate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nAuthor: %C(bold blue)%an%Creset %C(blue)[%ae]%Creset%n%C(cyan)%s%n%Creset'
+
+    # -> Pretty-print the branches recently modified
     recent = ! git branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\" | head -10
 
-    # stash
-    x = stash
-    xl = stash list
-    # recent stuff
+    # -> Pretty `git tag list`
+    tagz = log --decorate --oneline --simplify-by-decoration
 
 [diff]
     colormoved = "default"
     colormovedws = "allow-indentation-change"
+
+[pull]
+    rebase = true
+
+[push]
+    # -> Push commits and tags at the same time
+    followtags = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -39,5 +43,3 @@
 	process = git-lfs filter-process
     required = true
 
-[push]
-    followtags = true

@@ -1,76 +1,62 @@
-# Casks
+# =============================================================================
+# Taps (custom repositories)
+# =============================================================================
 tap "hashicorp/tap"
 
+
+# =============================================================================
 # Formulae
+# =============================================================================
 
-## Apps
-brew "transmission-cli"
-brew "ffmpeg"
-brew "pandoc"
-brew "zola"
-
-
-## -- Cloud
-brew "hashicorp/tap/terraform"
-
-## -- Navigation
-brew "wget"
-brew "starship"
-brew "fd"
-brew "fzf"
-brew "ripgrep"
-brew "tmux"
-brew "coreutils"
-brew "neovim"
-brew "make"
-brew "eza"
-
-
-## -- Monitoring
-brew "htop"
-brew "ncdu"
-brew "dust"
-brew "duf"
-brew "bottom"
-brew "iperf3"
-
-## -- Data wrangling
-brew "bat"
-brew "jq"
-brew "duckdb"
-brew "hexyl"
-brew "imagemagick"
-
-## Python
-brew "pyenv"
-brew "openssl"
-brew "readline"
-brew "sqlite3"
-brew "xz"
-brew "zlib"
-brew "tcl-tk"
-brew "uv"
-
-## Lua
-brew "lua"
+brew "atuin" # ------------------> Command line history
+brew "bat" # --------------------> A better cat
+brew "bottom" # -----------------> A better top
+brew "cmake" # ------------------> Cross-platform build tool
+brew "coreutils" # --------------> GNU utils
+brew "deno" # -------------------> JS runtime
+brew "duckdb" # -----------------> Fast analytics
+brew "dust" # -------------------> A better du
+brew "duf" # --------------------> A better duf
+brew "eza" # --------------------> A better ls
+brew "fd" # ---------------------> A better find
+brew "ffmpeg" # -----------------> Video editor
+brew "figlet" # -----------------> ASCII art
+brew "fish" # -------------------> A modern shell
+brew "fzf" # --------------------> Fuzzy finder
+brew "gh" # ---------------------> GitHub CLI
+brew "git-lfs" #-----------------> Git plugin for large files
+brew "grip" # -------------------> Markdown preview
+brew "hexyl" # ------------------> Hex viewer
+brew "imagemagick" # ------------> Image processing
+brew "jless" # ------------------> JSON exploration
+brew "jq" # ---------------------> JSON processing
+brew "just" # -------------------> Just a command runner
+brew "lua" # --------------------> Scripting language
+brew "make" # -------------------> GNU Make
+brew "neofetch" # ---------------> System info
+brew "neovim" # -----------------> The best IDE
+brew "ncdu" # -------------------> Disk usage analyzer
+brew "pandoc" # -----------------> Document converter
+brew "procs" # ------------------> A better ps
+brew "ripgrep" # ----------------> A better grep
+brew "starship" # ---------------> Terminal prompt
+brew "hashicorp/tap/terraform" #-> Infrastructure-as-code
+brew "tldr" # -------------------> Better man pages
+brew "transmission-cli" # -------> Bittorrent client
+brew "tmux" # -------------------> Terminal session manager
+brew "uv" # ---------------------> Python's Cargo
+brew "wget" # -------------------> File downloader
+brew "yt-dlp" # -----------------> YouTube metadata downloader
+brew "zola" # -------------------> Static site generator
 
 
-## Web dev
-brew "deno"
-brew "grip"
-brew "gh"
-brew "just"
-brew "git-lfs"
-brew "hugo"
+# =============================================================================
+# Casks
+# =============================================================================
 
 ## Fonts
-cask "font-monaspace"
-cask "font-fira-code-nerd-font"
-cask "font-iosevka"
+cask "audacity" # --------------------> Audio editing
+cask "font-fira-code-nerd-font" # ----> Default NerdFont
+cask "font-iosevka" # ----------------> Default font
+cask "zed" # -------------------------> Another IDE
 
-cask "zed"
-cask "audacity"
-
-brew "john-jumbo"
-brew "yt-dlp"
-brew "cmake"

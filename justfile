@@ -6,6 +6,23 @@ espanso_config_dir := `(espanso path | head -n 1 | grep -o '/Users.*')`
 starship_config := "$HOME/.config/starship.toml"
 tmux_config := "$HOME/.tmux.conf"
 nvim_config_dir := "$HOME/.config/nvim"
+fish_config_dir := "$HOME/.config/fish"
+
+fish: fisher
+    #!/opt/homebrew/bin/fish
+    if type -q atuin
+        echo "Setting up atuin..."
+        atuin init fish | source
+    else
+        echo "atuin is not installed"
+    end
+
+
+fisher:
+    test -d {{fish_config_dir}} || ln -s $(pwd)/fish {{fish_config_dir}}
+    fish -c {{fish_config_dir}}/scripts/install_fisher.fish
+    fish -c 'fisher install PatrickF1/fzf.fish'
+    fish -c 'fisher install catppuccin/fish'
 
 info:
   @echo "Homebrew" {{brew_version}}
