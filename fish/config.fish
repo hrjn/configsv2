@@ -10,6 +10,9 @@ bind \t accept-autosuggestion # -----------------------------------------> TAB t
 # => Abbreviations
 source $CONFIG_DIR/fish/functions/abbrs.fish
 
+# => Other custom functions
+source $CONFIG_DIR/fish/functions/brew_update.fish
+
 # => fzf.fish
 # - Directory search: Ctrl+F
 # - Process search: Ctrl+T
@@ -17,7 +20,8 @@ source $CONFIG_DIR/fish/functions/abbrs.fish
 fzf_configure_bindings --directory=\cf --processes=\ct --git_log=\cg
 
 # => Path updates
-fish_add_path "$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin" #---------> GNU coreutils
+fish_add_path "/opt/homebrew/bin" # ------------------------------------> Homebrew binaries
+fish_add_path "$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin" # --------> GNU coreutils
 fish_add_path '/usr/local/texlive/2024/bin/universal-darwin' # ---------> TexLive 
 
 
