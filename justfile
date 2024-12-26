@@ -7,6 +7,10 @@ starship_config := "$HOME/.config/starship.toml"
 tmux_config := "$HOME/.tmux.conf"
 nvim_config_dir := "$HOME/.config/nvim"
 fish_config_dir := "$HOME/.config/fish"
+ghostty_config_dir := "$HOME/.config/ghostty"
+
+ghostty:
+    test -d {{ghostty_config_dir}} || ln -s $(pwd)/ghostty {{ghostty_config_dir}}
 
 fish: fisher
     #!/opt/homebrew/bin/fish

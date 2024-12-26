@@ -11,7 +11,7 @@ bind \t accept-autosuggestion # -----------------------------------------> TAB t
 source $CONFIG_DIR/fish/functions/abbrs.fish
 
 # => Other custom functions
-source $CONFIG_DIR/fish/functions/brew_update.fish
+source $CONFIG_DIR/fish/functions/utils.fish
 
 # => fzf.fish
 # - Directory search: Ctrl+F
@@ -22,7 +22,7 @@ fzf_configure_bindings --directory=\cf --processes=\ct --git_log=\cg
 # => Path updates
 fish_add_path "/opt/homebrew/bin" # ------------------------------------> Homebrew binaries
 fish_add_path "$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin" # --------> GNU coreutils
-fish_add_path '/usr/local/texlive/2024/bin/universal-darwin' # ---------> TexLive 
+fish_add_path '/usr/local/texlive/2024/bin/universal-darwin' # ---------> TexLive
 
 
 # => [END] Starship.rs
