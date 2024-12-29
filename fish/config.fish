@@ -5,7 +5,7 @@ fish_config theme choose "Catppuccin Mocha"
 set -Ux CONFIG_DIR "$HOME/dev/configsv2"
 
 # => Bindings
-bind \t accept-autosuggestion # -----------------------------------------> TAB to accept suggested completion
+# bind \t accept-autosuggestion # -----------------------------------------> TAB to accept suggested completion
 
 # => Abbreviations
 source $CONFIG_DIR/fish/functions/abbrs.fish

@@ -2,6 +2,7 @@
 # Taps (custom repositories)
 # =============================================================================
 tap "hashicorp/tap"
+tap "lusingander/tap"
 
 
 # =============================================================================
@@ -39,6 +40,7 @@ brew "ncdu" # -------------------> Disk usage analyzer
 brew "pandoc" # -----------------> Document converter
 brew "procs" # ------------------> A better ps
 brew "ripgrep" # ----------------> A better grep
+brew "lusingander/tap/serie" # --> Rich git commit graph
 brew "starship" # ---------------> Terminal prompt
 brew "hashicorp/tap/terraform" #-> Infrastructure-as-code
 brew "tldr" # -------------------> Better man pages
@@ -59,4 +61,3 @@ cask "audacity" # --------------------> Audio editing
 cask "font-fira-code-nerd-font" # ----> Default NerdFont
 cask "font-iosevka" # ----------------> Default font
 cask "zed" # -------------------------> Another IDE
-
