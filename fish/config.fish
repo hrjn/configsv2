@@ -3,6 +3,7 @@ fish_config theme choose "Catppuccin Mocha"
 
 # => Variables
 set -Ux CONFIG_DIR "$HOME/dev/configsv2"
+set -Ux EDITOR "nvim"
 
 # => Bindings
 # bind \t accept-autosuggestion # -----------------------------------------> TAB to accept suggested completion
@@ -23,6 +24,7 @@ fzf_configure_bindings --directory=\cf --processes=\ct --git_log=\cg
 fish_add_path "/opt/homebrew/bin" # ------------------------------------> Homebrew binaries
 fish_add_path "$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin" # --------> GNU coreutils
 fish_add_path '/usr/local/texlive/2024/bin/universal-darwin' # ---------> TexLive
+fish_add_path "$HOME/.cargo/bin" # -------------------------------------> Cargo
 
 
 # => [END] Starship.rs

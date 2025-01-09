@@ -9,3 +9,5 @@ command = /opt/homebrew/bin/fish
 
 # Theme
 theme = catppuccin-mocha
+
+
