@@ -25,6 +25,7 @@ fish_add_path "/opt/homebrew/bin" # ------------------------------------> Homebr
 fish_add_path "$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin" # --------> GNU coreutils
 fish_add_path '/usr/local/texlive/2024/bin/universal-darwin' # ---------> TexLive
 fish_add_path "$HOME/.cargo/bin" # -------------------------------------> Cargo
+fish_add_path "/Users/harizo/.nvm/versions/node/v22.13.1/bin" # --------> nvm
 
 
 # => [END] Starship.rs

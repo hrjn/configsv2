@@ -46,7 +46,6 @@ brew "hashicorp/tap/terraform" #-> Infrastructure-as-code
 brew "tldr" # -------------------> Better man pages
 brew "transmission-cli" # -------> Bittorrent client
 brew "tmux" # -------------------> Terminal session manager
-brew "uv" # ---------------------> Python's Cargo
 brew "wget" # -------------------> File downloader
 brew "yt-dlp" # -----------------> YouTube metadata downloader
 brew "zola" # -------------------> Static site generator

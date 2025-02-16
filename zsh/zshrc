@@ -72,3 +72,5 @@ eval "$(starship init zsh)"
 
 # Uncomment for activating profiling
 # zprof
+
+. "$HOME/.local/bin/env"
