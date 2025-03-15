@@ -1,12 +1,3 @@
 # configsv2
 
-1. `brew bundle`
-2. `just build`
-
-
-## TODO
-
-- [ ] Python project creation script (requirements, justfile, vscode config for linting etc)
-- [ ] vscode (user settings, extensions)
-- [ ] iterm2
-- [ ] (?) taskwarrior
+A bunch of config files to make life better on the tools I use.
