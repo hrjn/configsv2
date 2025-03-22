@@ -1,0 +1,8 @@
+fish_config_dir := "$HOME/.config/fish"
+
+fish:
+    test -d {{ fish_config_dir }} || ln -s $(pwd)/fish {{ fish_config_dir }}
+    fish  {{ fish_config_dir }}/scripts/install_fisher.fish
+    fish -c 'fisher update'
+    mkdir -p {{ fish_config_dir }}/functions
+    echo fzf_key_bindings > {{ fish_config_dir }}/functions/fish_user_key_bindings.fish
