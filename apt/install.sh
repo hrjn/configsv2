@@ -14,7 +14,8 @@ apt_packages=(
     "cmake"
     "fish"
     "fzf"
-)
+    "tmux"
+
 for package in "${apt_packages[@]}"; do
     sudo apt -y install "$package"
 done
