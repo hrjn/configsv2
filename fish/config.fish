@@ -1,6 +1,10 @@
 # => [START] Theme
 fish_config theme choose "Catppuccin Mocha"
 
+if status is-interactive
+    atuin init fish | source
+end
+
 # => Variables
 set -Ux CONFIG_DIR "$HOME/.config/fish"
 set -Ux EDITOR "nvim"

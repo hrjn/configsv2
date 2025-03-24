@@ -1,4 +1,12 @@
+set export
+
 fish_config_dir := "$HOME/.config/fish"
+fish_path := "$(shell which fish)"
+git_config_file := "$HOME/.gitconfig"
+starship_config_file := "$HOME/.config/starship.toml"
+tmux_config_file := "$HOME/.tmux.conf"
+
+all: fish git starship tmux
 
 fish:
     test -d {{ fish_config_dir }} || ln -s $(pwd)/fish {{ fish_config_dir }}
@@ -6,3 +14,12 @@ fish:
     fish -c 'fisher update'
     mkdir -p {{ fish_config_dir }}/functions
     echo fzf_key_bindings > {{ fish_config_dir }}/functions/fish_user_key_bindings.fish
+
+git:
+    test -e {{ git_config_file }} || ln -s $(pwd)/git/gitconfig {{ git_config_file }}
+
+starship:
+    test -e {{ starship_config_file }} || ln -s $(pwd)/starship/starship.toml {{ starship_config_file }}
+
+tmux:
+    test -e {{ tmux_config_file }} || ln -s $(pwd)/tmux/tmux-ubuntu.conf {{ tmux_config_file }}

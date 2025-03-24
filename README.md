@@ -6,7 +6,7 @@ A bunch of config files to make life better on the tools I use.
 
 - [x] Clone this repository
 - [x] Install ghostty, a proper terminal.
-- [-] Instal `apt`-based packages
+- [x] Instal `apt`-based packages
   ```shell
   chmod +x ./apt/install.sh
   ./apt/install.sh
@@ -17,11 +17,11 @@ A bunch of config files to make life better on the tools I use.
   chmod +x ./oxidized-tools/install.sh
   ./oxidized-tools/install.sh
   ```
-- [ ] Configure the `fish` shell
-  - [x] Install the fisher plugin manager
-      ```shell
-      fish fish/install_fisher.fish
-      ```
-  - [x] Install fish plugins from file
-      ```
-      shell
+  To update installed packages, run:
+  ```shell
+  ./oxidized-tools/install.sh --force
+  ```
+- [x] Configure the `fish` shell
+  ```shell
+  just -f justfile-ubuntu fish
+  ```

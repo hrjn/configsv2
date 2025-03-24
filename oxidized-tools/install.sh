@@ -1,5 +1,7 @@
 #!/bin/bash
 
+force=false
+
 # Update Rust toolchain (requires rustup to be installed)
 rustup install stable
 rustup default stable
@@ -29,6 +31,14 @@ tools=(
     "ripgrep" # ---------------------------> A better grep
     "starship" # --------------------------> Terminal prompt
 )
+while [[ "$1" == "--force" ]]; do
+    force=true
+    shift
+done
 for tool in "${tools[@]}"; do
-    cargo install "$tool"
+    if $force; then
+        cargo install "$tool" --force
+    else
+        cargo install "$tool"
+    fi
 done
